@@ -6,7 +6,7 @@ import static textreverzinator.start.start;
 
 
 /**
- *Ebben az oszt√°lyban az app indul√°s√°t √°ll√≠tjuk be egy k√©rd√©s-v√°lasszal
+ *Ebben az oszt·lyban az app indul·s·t ·llÌtjuk be egy kÈrdÈs-v·lasszal
  * @author bodnart
  */
 public class quest {
@@ -14,7 +14,7 @@ public class quest {
             
     Scanner user_input = new Scanner(System.in);
      
-    System.out.println("Megford√≠tsak valamit? (i)");
+    System.out.println("MegfordÌtsak valamit? (i)");
               
     char V;
     
@@ -22,12 +22,12 @@ public class quest {
          
          if ('i' == V){
              
-            start() ; //Ha a v√°lasz 'i', akkor ind√≠tja a megford√≠t√≥t.
+            start() ; //Ha a v·lasz 'i', akkor indÌtja a megfordÌtÛt.
          }
          
          else{
              
-          System.out.println("Tal√°n majd legk√∂zelebb!");  //Ha a v√°lasz nem 'i', akkor kil√©p.
+          System.out.println("Tal·n majd legkˆzelebb!");  //Ha a v·lasz nem 'i', akkor kilÈp.
           
         System.exit(0);
         

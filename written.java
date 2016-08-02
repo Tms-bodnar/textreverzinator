@@ -1,7 +1,7 @@
 
 package textreverzinator;
 
-/**Ebben az osztÃ¡lyban zÃ¡rjuk el a String sorunkat, Ã©s Ã­gy csak a beÃ¡llÃ­tÃ³n-kiolvasÃ³n keresztÃ¼l Ã©rhetÅ‘ el.
+/**Ebben az osztályban zárjuk el a String sorunkat, és így csak a beéllítón-kiolvasón keresztül érhet? el.
  *
  * @author bodnart
  */

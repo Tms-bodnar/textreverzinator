@@ -4,50 +4,50 @@ package textreverzinator;
 import java.util.Scanner;
 import static textreverzinator.quest.quest;
 
-/** Ebben az osztÃ¡lyban a beÃ­rt szÃ¶veget egy beÃ¡llÃ­tÃ³val beÃ¡llÃ­tjuk,
- *  majd egy kiolvasÃ³val kiolvassuk a privÃ¡t written osztÃ¡ly written tagfÃ¼ggvÃ©nyÃ©bÅ‘l.
- * A kiolvasott stringet char sorrÃ¡ alakÃ­tjuk
- * char sorrÃ¡ alakÃ­tjuk, majd kiÃ­rjuk
+/** Ebben az osztályban a beírt szöveget egy beállítóval beállítjuk,
+ *  majd egy kiolvasóval kiolvassuk a privát written osztály written tagfüggvényéb?l.
+ * A kiolvasott stringet char sorrá alakítjuk
+ * majd kiírjuk
  *
  * @author bodnart
  */
 public class start {
         public static void start() {
             
-            written ir = new written(); // LÃ©trehozunk egy Ãºj written objektumot
+            written ir = new written(); // Létrehozunk egy új written objektumot
             
         
     Scanner input = new Scanner(System.in);
         
-    System.out.println ("Ãrd be a szÃ¶veget: ");
+    System.out.println ("Írd be a szöveget: ");
     
     String user_input;
     
-           user_input = input.nextLine(); //A nÃ©v beÃ­rva
+           user_input = input.nextLine(); //A név beírva
             
-            ir.setIrat(user_input); //A beÃ¡llÃ­tÃ³val beallÃ­tjuk az ir objektumra a beÃ­rt srtinget
+            ir.setIrat(user_input); //A beállítóval beallítjuk az ir objektumra a beírt srtinget
             
-            String irat = ir.getIrat(); //A kiolvasÃ³val kiolvassuk a privÃ¡t stringet.
+            String irat = ir.getIrat(); //A kiolvasóval kiolvassuk a privát stringet.
     
     char[] iratArray ;
-            iratArray = irat.toCharArray(); //A string Ã¡tvÃ¡ltva char tÃ¶mbbÃ©
+            iratArray = irat.toCharArray(); //A string átváltva char tömbbé
                   
     int l ;
-        l = iratArray.length; //A char tÃ¶mb hossza   
+        l = iratArray.length; //A char tömb hossza   
              
     int varied ;
-        varied = (l - 1); // A vÃ¡ltozÃ³ Ã©rtÃ©ke a karakterek helyÃ©nek megvÃ¡ltoztatÃ¡sÃ¡hoz
+        varied = (l - 1); // A változó értéke a karakterek helyének megváltoztatásához
         
     while( varied >= 0){
      
-        System.out.print(iratArray[varied]); // A tagfÃ¼ggvÃ©nyben megvÃ¡ltoztatjuk a karakterek helyÃ©t.
+        System.out.print(iratArray[varied]); // A tagfüggvényben megváltoztatjuk a karakterek helyét.
         
          varied = varied - 1;
        }
     
     if (varied < 0){
         
-      System.out.println(", JÃ³ mi?") ;// KiÃ­rjuk az eredmÃ©nyt, majd ÃºjraindÃ­tjuk a kÃ©rdÃ©st.
+      System.out.println(", JÃ³ mi?") ;// Kiírjuk az eredményt, majd újraindítjuk a kérdést.
       
       quest();
       }

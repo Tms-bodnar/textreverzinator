@@ -3,7 +3,7 @@ package textreverzinator;
 
 import static textreverzinator.quest.quest;
 
-/** Ez a kis app mefordÃ­tja a beÃ­rt szÃ¶veget
+/** Ez a kis app mefordítja a beírt szöveget
  *
  * @author bodnart
  */
